@@ -25,13 +25,44 @@
             color: white;
             margin-bottom: 30px;
         }
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+        header .logo {
+            width: 130px;
+            height: auto;
+            margin-bottom: 15px;
         }
-        header p {
-            opacity: 0.9;
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        header h2 {
             font-size: 1.1rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        header .venue {
+            background: rgba(255,255,255,0.15);
+            border-radius: 10px;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+        }
+        header .venue-name {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        header .venue-address {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+        header .date {
+            font-size: 0.9rem;
+            font-weight: 600;
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
         }
         .schedule {
             background: white;
@@ -63,6 +94,7 @@
         .event {
             padding: 15px 20px;
             border-bottom: 1px solid #eee;
+            text-align: center;
         }
         .event:last-child {
             border-bottom: none;
@@ -82,20 +114,10 @@
             color: #667eea;
             padding: 2px 8px;
             border-radius: 4px;
-            font-size: 0.75rem;
-            margin-top: 5px;
-        }
-        .track-num {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 24px;
-            font-size: 0.75rem;
-            margin-right: 10px;
+            font-size: 0.7rem;
+            margin-left: 8px;
+            vertical-align: middle;
+            font-weight: normal;
         }
         footer {
             text-align: center;
@@ -109,8 +131,14 @@
 <body>
     <div class="container">
         <header>
+            <img src="tdc-logo.png" alt="TDC Logo" class="logo">
             <h1>Lochhar 2025/2026 Celebration</h1>
-            <p>Saturday, January 3, 2026</p>
+            <h2>Tamu Dhee Colorado</h2>
+            <div class="venue">
+                <div class="venue-name">The Avalon Ballroom</div>
+                <div class="venue-address">6185 Arapahoe Rd, Boulder, CO 80303</div>
+            </div>
+            <div class="date">Saturday, January 3, 2026</div>
         </header>
 
         <!-- Guest Arrival -->
@@ -133,19 +161,20 @@
             </div>
             <div class="mc-info">MC: Gau Prasad & Sarita Gurung</div>
             <div class="event">
-                <h3>1. Lighting Ceremony</h3>
+                <h3>Lighting Ceremony</h3>
             </div>
             <div class="event">
-                <h3>2. USA National Anthem</h3>
+                <h3>USA National Anthem</h3>
             </div>
             <div class="event">
-                <h3>3. Nepali National Anthem</h3>
+                <h3>Nepali National Anthem</h3>
             </div>
             <div class="event">
-                <h3>4. Gurung Anthem</h3>
+                <h3>Gurung Anthem</h3>
             </div>
             <div class="event">
-                <h3>5. Welcome Speech</h3>
+                <h3>Welcome Speech</h3>
+                <p>Santosh Gurung (President TDC)</p>
             </div>
         </div>
 
@@ -156,94 +185,76 @@
                 <span class="time">7:00 - 8:30 PM</span>
             </div>
 
+            <!-- Events -->
+
             <div class="event">
-                <h3><span class="track-num">1</span>Dragonhunter</h3>
-                <p>Chahana</p>
-                <span class="type">Musical Instrument</span>
+                <h3>Gurung/Nepali class <span class="type">Presentation</span></h3>
+                <p>TDC school kids: Hattie, Chahana, Swikriti, Jeni, AD, Chirag, Jay, Adar, Jaybir, Nolan, Ruben</p>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">2</span>Ngolso Ramrani</h3>
-                <p>Jeni and AD</p>
-                <span class="type">Dance</span>
+                <h3>Dragonhunter <span class="type">Musical Instrument</span></h3>
+                <p>Chahana Gurung</p>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">3</span>Maya Pirati</h3>
-                <p>Chahana, Hattie, Jeni, Swikriti, AD, Chirag, Jay, Adar</p>
-                <span class="type">Group Dance</span>
-            </div>
-
-            <div class="event">
-                <h3><span class="track-num">4</span>Reemai</h3>
-                <p>Nanda Kala & Supreme Bista</p>
-                <span class="type">Dance</span>
-            </div>
-
-            <div class="event">
-                <h3><span class="track-num">5</span>Choli Ramro</h3>
+                <h3>Choli Ramro Palpali Dhaka ko <span class="type">Dance</span></h3>
                 <p>Sabbu Gurung</p>
-                <span class="type">Dance</span>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">6</span>Malai Pugena Pugena Yo Baisale (Remix)</h3>
+                <h3>Ngolsyo Ramrani <span class="type">Dance</span></h3>
+                <p>Jeni and AD</p>
+            </div>
+
+            <div class="event">
+                <h3>Maya Pirati <span class="type">Dance</span></h3>
+                <p>Chahana, Hattie, Jeni, Swikriti, AD, Chirag, Jay, Adar</p>
+            </div>
+
+            <div class="event">
+                <h3>Reemai <span class="type">Dance</span></h3>
+                <p>Nanda Kala & Supreme Bista</p>
+            </div>
+
+            <div class="event">
+                <h3>Mohani Lagla Hai <span class="type">Dance</span></h3>
+                <p>Samriddhi Sigdel, Sneha Luitel, Ishani Dahal, Twikle Tiwari</p>
+            </div>
+
+            <div class="event">
+                <h3>Malai Pugena Pugena Yo Baisale (Remix) <span class="type">Dance</span></h3>
                 <p>Sunita, Simran, Maya & Jenisha</p>
-                <span class="type">Dance</span>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">7</span>Rukum Maikot</h3>
+                <h3>Rukum Maikot <span class="type">Dance</span></h3>
                 <p>Chahana Gurung & Bidisha Bhandari</p>
-                <span class="type">Dance</span>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">8</span>Mohani Lagla Hai</h3>
+                <h3>Mohani Lagla Hai <span class="type">Dance</span></h3>
                 <p>Toshi Gurung</p>
-                <span class="type">Dance</span>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">9</span>Mohani Lagla Hai</h3>
-                <p>Samriddhi Sigdel,Sneha Luitel,Ishani Dahal,Twikle Tiwari</p>
-                <span class="type">Dance</span>
-            </div>
-
-            <div class="event">
-                <h3><span class="track-num">10</span>Song</h3>
-                <p>Nawang - TBC</p>
-                <span class="type">Song</span>
-            </div>
-
-            <div class="event">
-                <h3><span class="track-num">11</span>Dance</h3>
+                <h3>Dance <span class="type">Dance</span></h3>
                 <p>Shil Gurung & Friends</p>
-                <span class="type">Dance</span>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">12</span>Song</h3>
-                <p>Damphu Band</p>
-                <span class="type">Song</span>
+                <h3>Song <span class="type">Song</span></h3>
+                <p>Nawang - TBC</p>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">13</span>Song</h3>
+                <h3>Song <span class="type">Song</span></h3>
                 <p>Hiranya Bhojpure</p>
-                <span class="type">Song</span>
             </div>
 
             <div class="event">
-                <h3><span class="track-num">14</span>Baramase Ta</h3>
-                <p>Jenisha Gurung</p>
-                <span class="type">Dance</span>
-            </div>
-
-            <div class="event">
-                <h3><span class="track-num">15</span>Ngolso Ramrani</h3>
-                <p>Jenisha Gurung</p>
-                <span class="type">Dance</span>
+                <h3>Song <span class="type">Song</span></h3>
+                <p>Damphu Band</p>
             </div>
 
         </div>
