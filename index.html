@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Schedule</title>
+    <title>Lochhar 2025/2026 Celebration</title>
     <style>
         * {
             margin: 0;
@@ -38,35 +38,64 @@
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        .section-header {
+            background: #667eea;
+            color: white;
+            padding: 15px 20px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-header .time {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        .mc-info {
+            background: #f0f4ff;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            color: #667eea;
+            border-bottom: 1px solid #eee;
         }
         .event {
-            padding: 20px;
+            padding: 15px 20px;
             border-bottom: 1px solid #eee;
-            display: flex;
-            gap: 15px;
         }
         .event:last-child {
             border-bottom: none;
         }
-        .time {
-            flex-shrink: 0;
-            width: 80px;
-            font-weight: 600;
-            color: #667eea;
-        }
-        .details h3 {
+        .event h3 {
             font-size: 1rem;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
             color: #333;
         }
-        .details p {
-            font-size: 0.9rem;
+        .event p {
+            font-size: 0.85rem;
             color: #666;
         }
-        .location {
-            font-size: 0.85rem;
-            color: #888;
+        .event .type {
+            display: inline-block;
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
             margin-top: 5px;
+        }
+        .track-num {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 0.75rem;
+            margin-right: 10px;
         }
         footer {
             text-align: center;
@@ -80,35 +109,147 @@
 <body>
     <div class="container">
         <header>
-            <!-- EDIT: Change event name and date below -->
             <h1>Lochhar 2025/2026 Celebration</h1>
             <p>Saturday, January 3, 2026</p>
         </header>
 
+        <!-- Guest Arrival -->
         <div class="schedule">
-            <!-- EDIT: Copy and paste event blocks to add more items -->
-
+            <div class="section-header">
+                <span>Guest Arrival</span>
+                <span class="time">6:30 PM</span>
+            </div>
             <div class="event">
-                <div class="time">6:30 PM</div>
-                <div class="details">
-                    <h3>Guest Arrival</h3>
-                    <p>Welcome all</p>
-                </div>
+                <h3>Welcome</h3>
+                <p>Doors open, guests arrive</p>
+            </div>
+        </div>
+
+        <!-- Formal Event -->
+        <div class="schedule">
+            <div class="section-header">
+                <span>Formal Event</span>
+                <span class="time">7:00 PM</span>
+            </div>
+            <div class="mc-info">MC: Gau Prasad & Sarita Gurung</div>
+            <div class="event">
+                <h3>1. Lighting Ceremony</h3>
+            </div>
+            <div class="event">
+                <h3>2. USA National Anthem</h3>
+            </div>
+            <div class="event">
+                <h3>3. Nepali National Anthem</h3>
+            </div>
+            <div class="event">
+                <h3>4. Gurung Anthem</h3>
+            </div>
+            <div class="event">
+                <h3>5. Welcome Speech</h3>
+            </div>
+        </div>
+
+        <!-- Cultural Program -->
+        <div class="schedule">
+            <div class="section-header">
+                <span>Cultural Program</span>
+                <span class="time">7:00 - 8:30 PM</span>
             </div>
 
             <div class="event">
-                <div class="time">7:00 PM</div>
-                <div class="details">
-                    <h3>Ceremony</h3>
-                    <p>Formal Ceremony begins</p>
-                </div>
+                <h3><span class="track-num">1</span>Dragonhunter</h3>
+                <p>Chahana</p>
+                <span class="type">Musical Instrument</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">2</span>Ngolso Ramrani</h3>
+                <p>Jeni and AD</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">3</span>Maya Pirati</h3>
+                <p>Chahana, Hattie, Jeni, Swikriti, AD, Chirag, Jay, Adar</p>
+                <span class="type">Group Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">4</span>Reemai</h3>
+                <p>Nanda Kala & Supreme Bista</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">5</span>Choli Ramro</h3>
+                <p>Sabbu Gurung</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">6</span>Malai Pugena Pugena Yo Baisale (Remix)</h3>
+                <p>Sunita, Simran, Maya & Jenisha</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">7</span>Rukum Maikot</h3>
+                <p>Chahana Gurung & Bidisha Bhandari</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">8</span>Mohani Lagla Hai</h3>
+                <p>Toshi Gurung</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">9</span>Mohani Lagla Hai</h3>
+                <p>Samriddhi Sigdel,Sneha Luitel,Ishani Dahal,Twikle Tiwari</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">10</span>Song</h3>
+                <p>Nawang - TBC</p>
+                <span class="type">Song</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">11</span>Dance</h3>
+                <p>Shil Gurung & Friends</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">12</span>Song</h3>
+                <p>Damphu Band</p>
+                <span class="type">Song</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">13</span>Song</h3>
+                <p>Hiranya Bhojpure</p>
+                <span class="type">Song</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">14</span>Baramase Ta</h3>
+                <p>Jenisha Gurung</p>
+                <span class="type">Dance</span>
+            </div>
+
+            <div class="event">
+                <h3><span class="track-num">15</span>Ngolso Ramrani</h3>
+                <p>Jenisha Gurung</p>
+                <span class="type">Dance</span>
             </div>
 
         </div>
 
         <footer>
-            <!-- EDIT: Add contact info or message -->
-            <p>Questions? Contact us at example@email.com</p>
+            <p>Lochhar 2025/2026</p>
         </footer>
     </div>
 </body>
