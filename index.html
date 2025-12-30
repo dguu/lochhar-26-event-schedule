@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Schedule</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        .schedule {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .event {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            gap: 15px;
+        }
+        .event:last-child {
+            border-bottom: none;
+        }
+        .time {
+            flex-shrink: 0;
+            width: 80px;
+            font-weight: 600;
+            color: #667eea;
+        }
+        .details h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .details p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .location {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- EDIT: Change event name and date below -->
+            <h1>Lochhar 2025/2026 Celebration</h1>
+            <p>Saturday, January 3, 2026</p>
+        </header>
+
+        <div class="schedule">
+            <!-- EDIT: Copy and paste event blocks to add more items -->
+
+            <div class="event">
+                <div class="time">6:30 PM</div>
+                <div class="details">
+                    <h3>Guest Arrival</h3>
+                    <p>Welcome all</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="time">6:30 PM</div>
+                <div class="details">
+                    <h3>Ceremony</h3>
+                    <p>Formal Ceremony begins</p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <!-- EDIT: Add contact info or message -->
+            <p>Questions? Contact us at example@email.com</p>
+        </footer>
+    </div>
+</body>
+</html>
